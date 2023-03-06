@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77675F86-903D-4B7E-83CC-24C69337F67B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ItiDesktopProject</RootNamespace>
+    <AssemblyName>ItiDesktopProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adminstrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminstrator.Designer.cs">
+      <DependentUpon>Adminstrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill.Designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmReservation.Designer.cs">
+      <DependentUpon>ConfirmReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnosis.Designer.cs">
+      <DependentUpon>Diagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303061657399_addVisitTime.cs" />
+    <Compile Include="Migrations\202303061657399_addVisitTime.designer.cs">
+      <DependentUpon>202303061657399_addVisitTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prescription.Designer.cs">
+      <DependentUpon>Prescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisitDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisitDetails.Designer.cs">
+      <DependentUpon>VisitDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakeReservationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakeReservationForm.Designer.cs">
+      <DependentUpon>MakeReservationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalHistory.Designer.cs">
+      <DependentUpon>MedicalHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303011712109_initialCreate.cs" />
+    <Compile Include="Migrations\202303011712109_initialCreate.designer.cs">
+      <DependentUpon>202303011712109_initialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Bill.cs" />
+    <Compile Include="Models\BillServices.cs" />
+    <Compile Include="Models\Clinic.cs" />
+    <Compile Include="Models\Diagnoses.cs" />
+    <Compile Include="Models\doctor.cs" />
+    <Compile Include="Models\DoctorSlots.cs" />
+    <Compile Include="Models\keyAttribute.cs" />
+    <Compile Include="Models\Model1.cs" />
+    <Compile Include="Models\patient.cs" />
+    <Compile Include="Models\prescription.cs" />
+    <Compile Include="Models\reseptionest.cs" />
+    <Compile Include="Models\Services.cs" />
+    <Compile Include="Models\slots.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Visit.cs" />
+    <Compile Include="PrescriptionAndDiagnosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrescriptionAndDiagnosis.Designer.cs">
+      <DependentUpon>PrescriptionAndDiagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceptionistAppointmentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceptionistAppointmentsForm.Designer.cs">
+      <DependentUpon>ReceptionistAppointmentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\GenericRepository.cs" />
+    <Compile Include="Repositories\IGenericRepoistory.cs" />
+    <Compile Include="Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule.Designer.cs">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServicesBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicesBill.Designer.cs">
+      <DependentUpon>ServicesBill.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Adminstrator.resx">
+      <DependentUpon>Adminstrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bill.resx">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmReservation.resx">
+      <DependentUpon>ConfirmReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnosis.resx">
+      <DependentUpon>Diagnosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303061657399_addVisitTime.resx">
+      <DependentUpon>202303061657399_addVisitTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prescription.resx">
+      <DependentUpon>Prescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisitDetails.resx">
+      <DependentUpon>VisitDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakeReservationForm.resx">
+      <DependentUpon>MakeReservationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalHistory.resx">
+      <DependentUpon>MedicalHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303011712109_initialCreate.resx">
+      <DependentUpon>202303011712109_initialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrescriptionAndDiagnosis.resx">
+      <DependentUpon>PrescriptionAndDiagnosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceptionistAppointmentsForm.resx">
+      <DependentUpon>ReceptionistAppointmentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Schedule.resx">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicesBill.resx">
+      <DependentUpon>ServicesBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kham-low-resolution-color-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
