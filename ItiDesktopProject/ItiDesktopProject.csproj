@@ -97,6 +97,10 @@
     <Compile Include="Migrations\202303070647108_deleteBillFromService.designer.cs">
       <DependentUpon>202303070647108_deleteBillFromService.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303072011103_changedPasswordToString.cs" />
+    <Compile Include="Migrations\202303072011103_changedPasswordToString.designer.cs">
+      <DependentUpon>202303072011103_changedPasswordToString.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prescription.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303070647108_deleteBillFromService.resx">
       <DependentUpon>202303070647108_deleteBillFromService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303072011103_changedPasswordToString.resx">
+      <DependentUpon>202303072011103_changedPasswordToString.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prescription.resx">
       <DependentUpon>Prescription.cs</DependentUpon>

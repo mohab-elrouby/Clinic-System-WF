@@ -102,3 +102,4 @@ C:\Users\mohab\Downloads\ItiDesktopProject\ItiDesktopProject\obj\Debug\ItiDeskto
 C:\Users\mohab\Downloads\ItiDesktopProject\ItiDesktopProject\obj\Debug\ItiDesktopProject.Migrations.addDoctorToVisit.resources
 C:\Users\mohab\Downloads\ItiDesktopProject\ItiDesktopProject\obj\Debug\ItiDesktopProject.Migrations.addPatientIdToVisit.resources
 C:\Users\mohab\Downloads\ItiDesktopProject\ItiDesktopProject\obj\Debug\ItiDesktopProject.Migrations.deleteBillFromService.resources
+C:\Users\mohab\Downloads\ItiDesktopProject\ItiDesktopProject\obj\Debug\ItiDesktopProject.Migrations.changedPasswordToString.resources
