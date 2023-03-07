@@ -85,6 +85,18 @@
     <Compile Include="Migrations\202303061657399_addVisitTime.designer.cs">
       <DependentUpon>202303061657399_addVisitTime.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303062032316_addDoctorToVisit.cs" />
+    <Compile Include="Migrations\202303062032316_addDoctorToVisit.designer.cs">
+      <DependentUpon>202303062032316_addDoctorToVisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303070559103_addPatientIdToVisit.cs" />
+    <Compile Include="Migrations\202303070559103_addPatientIdToVisit.designer.cs">
+      <DependentUpon>202303070559103_addPatientIdToVisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303070647108_deleteBillFromService.cs" />
+    <Compile Include="Migrations\202303070647108_deleteBillFromService.designer.cs">
+      <DependentUpon>202303070647108_deleteBillFromService.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prescription.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +189,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303061657399_addVisitTime.resx">
       <DependentUpon>202303061657399_addVisitTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303062032316_addDoctorToVisit.resx">
+      <DependentUpon>202303062032316_addDoctorToVisit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303070559103_addPatientIdToVisit.resx">
+      <DependentUpon>202303070559103_addPatientIdToVisit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303070647108_deleteBillFromService.resx">
+      <DependentUpon>202303070647108_deleteBillFromService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prescription.resx">
       <DependentUpon>Prescription.cs</DependentUpon>

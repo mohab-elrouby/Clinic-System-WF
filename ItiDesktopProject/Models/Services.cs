@@ -17,7 +17,6 @@ namespace clinckDB.databaseclincik
         public float cost { set; get; }
 
         public Clinic Clinic { set; get; }
-        public Bill Bills { set; get; }
 
     }
 }

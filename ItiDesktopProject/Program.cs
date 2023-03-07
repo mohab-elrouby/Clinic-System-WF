@@ -27,10 +27,10 @@ namespace ItiDesktopProject
             //Console.ReadLine();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            //Application.Run(new Login());
             //Application.Run(new ConfirmReservation());
-            //Application.Run(new MakeReservationForm());
-            //Application.Run(new ReceptionistAppointmentsForm());
+            //Application.Run(mainForm: new MakeReservationForm());
+            Application.Run(new ReceptionistAppointmentsForm());
             //Application.Run(new Schedule());
             //Application.Run(new PrescriptionAndDiagnosis());
             //Application.Run(new ServicesBill());

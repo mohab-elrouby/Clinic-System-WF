@@ -29,8 +29,11 @@ namespace clinckDB.databaseclincik
         public string visit_date { set; get; }
         public string visit_time { set; get; }
         public Clinic Clinc { set;get; }
-        public Bill Bills { set; get; } 
+        public Bill Bills { set; get; }
+        public int PatientID { set; get; }
         public Patient Patient { set; get; }
+        public int DoctorId { set; get; }
+        public Doctor Doctor { set; get; }
         public Prescription Prescription { set; get; }
         public Diagnoses Diagnoses { get; set; }
     }

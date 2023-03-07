@@ -99,3 +99,6 @@ C:\Users\mohab\Downloads\ItiDesktopProject\ItiDesktopProject\obj\Debug\ItiDeskto
 C:\Users\mohab\Downloads\ItiDesktopProject\ItiDesktopProject\obj\Debug\ItiDesktopProject.exe
 C:\Users\mohab\Downloads\ItiDesktopProject\ItiDesktopProject\obj\Debug\ItiDesktopProject.pdb
 C:\Users\mohab\Downloads\ItiDesktopProject\ItiDesktopProject\obj\Debug\ItiDesktopProject.Migrations.addVisitTime.resources
+C:\Users\mohab\Downloads\ItiDesktopProject\ItiDesktopProject\obj\Debug\ItiDesktopProject.Migrations.addDoctorToVisit.resources
+C:\Users\mohab\Downloads\ItiDesktopProject\ItiDesktopProject\obj\Debug\ItiDesktopProject.Migrations.addPatientIdToVisit.resources
+C:\Users\mohab\Downloads\ItiDesktopProject\ItiDesktopProject\obj\Debug\ItiDesktopProject.Migrations.deleteBillFromService.resources
