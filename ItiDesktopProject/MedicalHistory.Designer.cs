@@ -29,39 +29,34 @@ namespace Clicic
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.PatientName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DoctorCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClinicCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AppointmentCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PaymentStatusCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PaymentMethodCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AppointmentStatusCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.PatientName,
-            this.DoctorCol,
-            this.ClinicCol,
-            this.AppointmentCol,
-            this.PaymentStatusCol,
-            this.PaymentMethodCol,
-            this.AppointmentStatusCol});
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView1.Location = new System.Drawing.Point(33, 59);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -73,57 +68,15 @@ namespace Clicic
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1288, 516);
             this.dataGridView1.TabIndex = 3;
-            // 
-            // PatientName
-            // 
-            this.PatientName.HeaderText = "Patient Name";
-            this.PatientName.MinimumWidth = 6;
-            this.PatientName.Name = "PatientName";
-            this.PatientName.ReadOnly = true;
-            // 
-            // DoctorCol
-            // 
-            this.DoctorCol.HeaderText = "Doctor";
-            this.DoctorCol.MinimumWidth = 6;
-            this.DoctorCol.Name = "DoctorCol";
-            this.DoctorCol.ReadOnly = true;
-            // 
-            // ClinicCol
-            // 
-            this.ClinicCol.HeaderText = "Clinic";
-            this.ClinicCol.MinimumWidth = 6;
-            this.ClinicCol.Name = "ClinicCol";
-            this.ClinicCol.ReadOnly = true;
-            // 
-            // AppointmentCol
-            // 
-            this.AppointmentCol.HeaderText = "Appointment";
-            this.AppointmentCol.MinimumWidth = 6;
-            this.AppointmentCol.Name = "AppointmentCol";
-            this.AppointmentCol.ReadOnly = true;
-            // 
-            // PaymentStatusCol
-            // 
-            this.PaymentStatusCol.HeaderText = "Payment status";
-            this.PaymentStatusCol.MinimumWidth = 6;
-            this.PaymentStatusCol.Name = "PaymentStatusCol";
-            this.PaymentStatusCol.ReadOnly = true;
-            // 
-            // PaymentMethodCol
-            // 
-            this.PaymentMethodCol.HeaderText = "Payment method";
-            this.PaymentMethodCol.MinimumWidth = 6;
-            this.PaymentMethodCol.Name = "PaymentMethodCol";
-            this.PaymentMethodCol.ReadOnly = true;
-            // 
-            // AppointmentStatusCol
-            // 
-            this.AppointmentStatusCol.HeaderText = "Appointment Status";
-            this.AppointmentStatusCol.MinimumWidth = 6;
-            this.AppointmentStatusCol.Name = "AppointmentStatusCol";
-            this.AppointmentStatusCol.ReadOnly = true;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
+            this.dataGridView1.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDoubleClick);
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
+            this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
             // 
             // panel2
             // 
@@ -162,11 +115,29 @@ namespace Clicic
             this.textBox1.Text = "Doctor : Bahaa";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(168)))), ((int)(((byte)(125)))));
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.ForeColor = System.Drawing.Color.White;
+            this.textBox3.Location = new System.Drawing.Point(495, 33);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(313, 26);
+            this.textBox3.TabIndex = 7;
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // MedicalHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 611);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel2);
@@ -174,6 +145,7 @@ namespace Clicic
             this.Name = "MedicalHistory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MedicalHistory";
+            this.Load += new System.EventHandler(this.MedicalHistory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -182,15 +154,10 @@ namespace Clicic
 
         #endregion
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PatientName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DoctorCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ClinicCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AppointmentCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PaymentStatusCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PaymentMethodCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AppointmentStatusCol;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Timer timer1;
     }
 }

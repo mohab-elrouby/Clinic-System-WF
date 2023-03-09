@@ -38,6 +38,7 @@ namespace clinckDB.databaseclincik
         public User UserTypes { set; get; }
         List<DoctorSlots> Doctor_Slots { set; get; } = new List<DoctorSlots>();
 
+        public string WorkingHours { set; get; }
 
 
 

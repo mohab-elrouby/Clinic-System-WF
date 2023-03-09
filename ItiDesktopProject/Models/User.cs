@@ -9,6 +9,7 @@ namespace clinckDB.databaseclincik
    public class User
     {
         public int ID { get; set; }
+        
         public string UserName { set; get; }
         public string Password { set; get; }
         public string type { set; get; }

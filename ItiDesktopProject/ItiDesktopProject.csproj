@@ -101,6 +101,24 @@
     <Compile Include="Migrations\202303072011103_changedPasswordToString.designer.cs">
       <DependentUpon>202303072011103_changedPasswordToString.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303081335137_addWorkingHoursToDoctor.cs" />
+    <Compile Include="Migrations\202303081335137_addWorkingHoursToDoctor.designer.cs">
+      <DependentUpon>202303081335137_addWorkingHoursToDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303082218239_removeRelationBetweenPrescriptionAndVisit.cs" />
+    <Compile Include="Migrations\202303082218239_removeRelationBetweenPrescriptionAndVisit.designer.cs">
+      <DependentUpon>202303082218239_removeRelationBetweenPrescriptionAndVisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303082220474_addListOfPrescreptionsToVisit.cs" />
+    <Compile Include="Migrations\202303082220474_addListOfPrescreptionsToVisit.designer.cs">
+      <DependentUpon>202303082220474_addListOfPrescreptionsToVisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientInfo.Designer.cs">
+      <DependentUpon>PatientInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prescription.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +223,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303072011103_changedPasswordToString.resx">
       <DependentUpon>202303072011103_changedPasswordToString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303081335137_addWorkingHoursToDoctor.resx">
+      <DependentUpon>202303081335137_addWorkingHoursToDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303082218239_removeRelationBetweenPrescriptionAndVisit.resx">
+      <DependentUpon>202303082218239_removeRelationBetweenPrescriptionAndVisit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303082220474_addListOfPrescreptionsToVisit.resx">
+      <DependentUpon>202303082220474_addListOfPrescreptionsToVisit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prescription.resx">
       <DependentUpon>Prescription.cs</DependentUpon>

@@ -12,6 +12,8 @@ namespace Clicic
 {
     public partial class PrescriptionAndDiagnosis : Form
     {
+        public int VisitID { get; set; }
+
         public PrescriptionAndDiagnosis()
         {
             InitializeComponent();
@@ -19,7 +21,7 @@ namespace Clicic
 
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

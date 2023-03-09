@@ -31,7 +31,7 @@ namespace ItiDesktopProject
             //Application.Run(new ConfirmReservation());
             //Application.Run(mainForm: new MakeReservationForm());
             Application.Run(new ReceptionistAppointmentsForm());
-            //Application.Run(new Schedule());
+            Application.Run(new Schedule());
             //Application.Run(new PrescriptionAndDiagnosis());
             //Application.Run(new ServicesBill());
             //Application.Run(new Adminstrator());

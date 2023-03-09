@@ -228,7 +228,7 @@ namespace Clicic
             this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(168)))), ((int)(((byte)(125)))));
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox8.ForeColor = System.Drawing.Color.Black;
-            this.textBox8.Location = new System.Drawing.Point(894, 45);
+            this.textBox8.Location = new System.Drawing.Point(860, 45);
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(322, 30);
@@ -311,7 +311,7 @@ namespace Clicic
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1346, 689);
+            this.ClientSize = new System.Drawing.Size(1367, 689);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.panel1);

@@ -34,12 +34,12 @@
             this.button5 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button3 = new System.Windows.Forms.Button();
             this.DoctorNameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.WorkingDaysCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.WorkingHoursCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,15 +47,16 @@
             this.FeesCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EmailCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AccountantEmailCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Transparent;
@@ -71,6 +72,7 @@
             // button6
             // 
             this.button6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.Transparent;
@@ -86,6 +88,7 @@
             // button5
             // 
             this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Transparent;
@@ -105,7 +108,7 @@
             this.panel2.Location = new System.Drawing.Point(257, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1114, 28);
+            this.panel2.Size = new System.Drawing.Size(1363, 28);
             this.panel2.TabIndex = 3;
             // 
             // panel1
@@ -122,19 +125,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(257, 577);
             this.panel1.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = global::ItiDesktopProject.Properties.Resources.kham_low_resolution_color_logo;
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(257, 191);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // monthCalendar1
             // 
@@ -203,6 +193,22 @@
             this.dataGridView1.Size = new System.Drawing.Size(1259, 206);
             this.dataGridView1.TabIndex = 8;
             // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(168)))), ((int)(((byte)(125)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(920, 516);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(261, 50);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Reserve an appointment";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // DoctorNameCol
             // 
             this.DoctorNameCol.HeaderText = "Doctor Name";
@@ -212,10 +218,12 @@
             // 
             // WorkingDaysCol
             // 
+            this.WorkingDaysCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
             this.WorkingDaysCol.HeaderText = "Working Days";
             this.WorkingDaysCol.MinimumWidth = 6;
             this.WorkingDaysCol.Name = "WorkingDaysCol";
             this.WorkingDaysCol.ReadOnly = true;
+            this.WorkingDaysCol.Width = 24;
             // 
             // WorkingHoursCol
             // 
@@ -252,26 +260,24 @@
             this.AccountantEmailCol.Name = "AccountantEmailCol";
             this.AccountantEmailCol.ReadOnly = true;
             // 
-            // button3
+            // pictureBox1
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(168)))), ((int)(((byte)(125)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(795, 516);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(261, 50);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Reserve an appointment";
-            this.button3.UseVisualStyleBackColor = false;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = global::ItiDesktopProject.Properties.Resources.kham_low_resolution_color_logo;
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(257, 191);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // MakeReservationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1371, 577);
+            this.ClientSize = new System.Drawing.Size(1620, 577);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.comboBox1);
@@ -287,8 +293,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MakeReservationForm_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -306,6 +312,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridViewTextBoxColumn DoctorNameCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn WorkingDaysCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn WorkingHoursCol;
@@ -313,6 +320,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FeesCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn EmailCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn AccountantEmailCol;
-        private System.Windows.Forms.Button button3;
     }
 }

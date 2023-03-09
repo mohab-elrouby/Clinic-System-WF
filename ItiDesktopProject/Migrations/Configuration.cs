@@ -50,15 +50,15 @@
             context.Clincs.AddOrUpdate(new Clinic() { clinicID =2, clinic_name = "ENT", start_time = "9am", end_time="9pm" });
             context.Clincs.AddOrUpdate(new Clinic() { clinicID =3, clinic_name = "Dental", start_time = "9am", end_time="9pm" });
 
-            context.Doctors.AddOrUpdate(new Doctor() { doctorID = 1, name = "Ahmed mohamed", Email = "ahmed@gmail.com", age = 30, ClinicId = 1, Gender = "Male", Mirtal_Status = "Single", phonNumber = "01125374645", percentage = 40f, Contract ="", AccountantEmail = "" });
-            context.Doctors.AddOrUpdate(new Doctor() { doctorID = 2, name = "Bahaa mohamed", Email = "bahaa@gmail.com", age = 33, ClinicId = 1, Gender = "Male", Mirtal_Status = "Single", phonNumber = "01125374645", percentage = 40f, Contract ="", AccountantEmail = "" });
-            context.Doctors.AddOrUpdate(new Doctor() { doctorID = 3, name = "Youssef mohamed", Email = "youssef@gmail.com", age = 40, ClinicId = 1, Gender = "Male", Mirtal_Status = "Single", phonNumber = "01125374645", percentage = 40f, Contract ="", AccountantEmail = "" });
-            context.Doctors.AddOrUpdate(new Doctor() { doctorID = 4, name = "Khaled mohamed", Email = "khaled@gmail.com", age = 29, ClinicId = 2, Gender = "Male", Mirtal_Status = "Single", phonNumber = "01125374645", percentage = 40f, Contract ="", AccountantEmail = "" });
-            context.Doctors.AddOrUpdate(new Doctor() { doctorID = 5, name = "Sara mohamed", Email = "sara@gmail.com", age = 31, ClinicId = 2, Gender = "Female", Mirtal_Status = "Single", phonNumber = "01125374645", percentage = 40f, Contract ="", AccountantEmail = "" });
-            context.Doctors.AddOrUpdate(new Doctor() { doctorID = 6, name = "Hanaa mohamed", Email = "hanaa@gmail.com", age = 30, ClinicId = 2, Gender = "Female", Mirtal_Status = "Single", phonNumber = "01125374645", percentage = 40f, Contract ="", AccountantEmail = "" });
-            context.Doctors.AddOrUpdate(new Doctor() { doctorID = 7, name = "Ali mohamed", Email = "ali@gmail.com", age = 30, ClinicId = 3, Gender = "Male", Mirtal_Status = "Single", phonNumber = "01125374645", percentage = 40f, Contract ="", AccountantEmail = "" });
-            context.Doctors.AddOrUpdate(new Doctor() { doctorID = 8, name = "Alaa mohamed", Email = "alaa@gmail.com", age = 35, ClinicId = 3, Gender = "Male", Mirtal_Status = "Single", phonNumber = "01125374645", percentage = 40f, Contract ="", AccountantEmail = "" });
-            context.Doctors.AddOrUpdate(new Doctor() { doctorID = 9, name = "Mostafa mohamed", Email = "mostafa@gmail.com", age = 42, ClinicId = 3, Gender = "Male", Mirtal_Status = "Single", phonNumber = "01125374645", percentage = 40f, Contract ="", AccountantEmail = "" });
+            context.Doctors.AddOrUpdate(new Doctor() { doctorID = 1, name = "Ahmed mohamed", Email = "ahmed@gmail.com", age = 30, ClinicId = 1, Gender = "Male", Mirtal_Status = "Single", phonNumber = "01125374645", percentage = 40f, Contract ="", AccountantEmail = "", WorkingHours = "9am-9pm"});
+            context.Doctors.AddOrUpdate(new Doctor() { doctorID = 2, name = "Bahaa mohamed", Email = "bahaa@gmail.com", age = 33, ClinicId = 1, Gender = "Male", Mirtal_Status = "Single", phonNumber = "01125374645", percentage = 40f, Contract ="", AccountantEmail = "", WorkingHours = "9am-9pm" });
+            context.Doctors.AddOrUpdate(new Doctor() { doctorID = 3, name = "Youssef mohamed", Email = "youssef@gmail.com", age = 40, ClinicId = 1, Gender = "Male", Mirtal_Status = "Single", phonNumber = "01125374645", percentage = 40f, Contract ="", AccountantEmail = "", WorkingHours = "9am-9pm" });
+            context.Doctors.AddOrUpdate(new Doctor() { doctorID = 4, name = "Khaled mohamed", Email = "khaled@gmail.com", age = 29, ClinicId = 2, Gender = "Male", Mirtal_Status = "Single", phonNumber = "01125374645", percentage = 40f, Contract ="", AccountantEmail = "", WorkingHours = "9am-9pm" });
+            context.Doctors.AddOrUpdate(new Doctor() { doctorID = 5, name = "Sara mohamed", Email = "sara@gmail.com", age = 31, ClinicId = 2, Gender = "Female", Mirtal_Status = "Single", phonNumber = "01125374645", percentage = 40f, Contract ="", AccountantEmail = "", WorkingHours = "9am-9pm" });
+            context.Doctors.AddOrUpdate(new Doctor() { doctorID = 6, name = "Hanaa mohamed", Email = "hanaa@gmail.com", age = 30, ClinicId = 2, Gender = "Female", Mirtal_Status = "Single", phonNumber = "01125374645", percentage = 40f, Contract ="", AccountantEmail = "", WorkingHours = "9am-9pm" });
+            context.Doctors.AddOrUpdate(new Doctor() { doctorID = 7, name = "Ali mohamed", Email = "ali@gmail.com", age = 30, ClinicId = 3, Gender = "Male", Mirtal_Status = "Single", phonNumber = "01125374645", percentage = 40f, Contract ="", AccountantEmail = "" , WorkingHours = "9am-9pm" });
+            context.Doctors.AddOrUpdate(new Doctor() { doctorID = 8, name = "Alaa mohamed", Email = "alaa@gmail.com", age = 35, ClinicId = 3, Gender = "Male", Mirtal_Status = "Single", phonNumber = "01125374645", percentage = 40f, Contract ="", AccountantEmail = "" , WorkingHours = "9am-9pm" });
+            context.Doctors.AddOrUpdate(new Doctor() { doctorID = 9, name = "Mostafa mohamed", Email = "mostafa@gmail.com", age = 42, ClinicId = 3, Gender = "Male", Mirtal_Status = "Single", phonNumber = "01125374645", percentage = 40f, Contract ="", AccountantEmail = "" , WorkingHours = "9am-9pm" });
 
 
             context.Patients.AddOrUpdate(new Patient() { ID = 1, name = "Ali hamada", age = 32, Email = "ali@gmail.com", address="new cairo", gender = "Male", mirtal_status = "Single", phonnumber = "01024537272" });
@@ -80,6 +80,22 @@
             }
             context.SaveChanges();
 
+            //for (int i = 1; i <= context.Doctors.Select(d => d.doctorID).Count(); i++)
+            //{
+            //    Doctor currDoc = context.Doctors.Find(i);
+            //    string[] hours =currDoc.WorkingHours.Split('-');
+            //    int start = int.Parse(hours[0]) - 8;
+            //    for (int j = start; j < context.Slots.Select(s => s.SlotsID).Count()-2; j+=2)
+            //    {
+            //        context.Doctor_Slots.AddOrUpdate(new DoctorSlots() { DoctorID = i, SlotsID = j, isReserved = false });
+            //        context.Doctor_Slots.AddOrUpdate(new DoctorSlots() { DoctorID = i, SlotsID = j+1, isReserved = false });
+            //        if(j %23 ==0)
+            //        {
+            //            j += ;
+            //        }
+            //    }
+            //}
+
             for (int j = 1; j <= context.Slots.Select(s => s.SlotsID).Count(); j++)
             {
                 for (int i = 1; i <= context.Doctors.Select(d => d.doctorID).Count(); i++)
@@ -98,12 +114,12 @@
             context.Services.AddOrUpdate(new Services() { ID = 9, servcsesname = "Stature", cost=6500 });
 
             IList<Patient> patients = context.Patients.Select(p => p).ToList();
-            context.Visites.AddOrUpdate(new Visit() { VisitID = 1, DoctorId = 1, PatientID = 1, visit_date = DateTime.Now.Date.ToString().Split(' ')[0], visit_time = "12:00", Visit_Status = visit_statuse.Confirmed, Clinc=context.Clincs.Find(1) });
-            context.Visites.AddOrUpdate(new Visit() { VisitID = 2, DoctorId = 2, PatientID = 2, visit_date = DateTime.Now.Date.ToString().Split(' ')[0], visit_time = "12:30", Visit_Status = visit_statuse.Confirmed, Clinc=context.Clincs.Find(1) });
-            context.Visites.AddOrUpdate(new Visit() { VisitID = 3, DoctorId = 3, PatientID = 3, visit_date = DateTime.Now.Date.ToString().Split(' ')[0], visit_time = "12:00", Visit_Status = visit_statuse.Confirmed, Clinc = context.Clincs.Find(1) });
-            context.Visites.AddOrUpdate(new Visit() { VisitID = 4, DoctorId = 4, PatientID = 4, visit_date = DateTime.Now.Date.ToString().Split(' ')[0], visit_time = "12:30", Visit_Status = visit_statuse.Confirmed, Clinc = context.Clincs.Find(1) });
-            context.Visites.AddOrUpdate(new Visit() { VisitID = 5, DoctorId = 5, PatientID = 5, visit_date = DateTime.Now.Date.ToString().Split(' ')[0], visit_time = "12:00", Visit_Status = visit_statuse.Confirmed, Clinc = context.Clincs.Find(1) });
-            context.Visites.AddOrUpdate(new Visit() { VisitID = 6, DoctorId = 6, PatientID = 6, visit_date = DateTime.Now.Date.ToString().Split(' ')[0], visit_time = "12:30", Visit_Status = visit_statuse.Confirmed, Clinc = context.Clincs.Find(1) });
+            context.Visites.AddOrUpdate(new Visit() { VisitID = 1, DoctorId = 1, PatientID = 1, visit_date = DateTime.Now.Date.ToString().Split(' ')[0], visit_time = "12:00PM", Visit_Status = visit_statuse.Confirmed, Clinc=context.Clincs.Find(1) });
+            context.Visites.AddOrUpdate(new Visit() { VisitID = 2, DoctorId = 2, PatientID = 2, visit_date = DateTime.Now.Date.ToString().Split(' ')[0], visit_time = "12:30PM", Visit_Status = visit_statuse.Confirmed, Clinc=context.Clincs.Find(1) });
+            context.Visites.AddOrUpdate(new Visit() { VisitID = 3, DoctorId = 3, PatientID = 3, visit_date = DateTime.Now.Date.ToString().Split(' ')[0], visit_time = "12:00PM", Visit_Status = visit_statuse.Confirmed, Clinc = context.Clincs.Find(1) });
+            context.Visites.AddOrUpdate(new Visit() { VisitID = 4, DoctorId = 4, PatientID = 4, visit_date = DateTime.Now.Date.ToString().Split(' ')[0], visit_time = "12:30PM", Visit_Status = visit_statuse.Confirmed, Clinc = context.Clincs.Find(1) });
+            context.Visites.AddOrUpdate(new Visit() { VisitID = 5, DoctorId = 5, PatientID = 5, visit_date = DateTime.Now.Date.ToString().Split(' ')[0], visit_time = "12:00PM", Visit_Status = visit_statuse.Confirmed, Clinc = context.Clincs.Find(1) });
+            context.Visites.AddOrUpdate(new Visit() { VisitID = 6, DoctorId = 6, PatientID = 6, visit_date = DateTime.Now.Date.ToString().Split(' ')[0], visit_time = "12:30PM", Visit_Status = visit_statuse.Confirmed, Clinc = context.Clincs.Find(1) });
 
             context.SaveChanges();
 

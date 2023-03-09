@@ -34,7 +34,7 @@ namespace clinckDB.databaseclincik
         public Patient Patient { set; get; }
         public int DoctorId { set; get; }
         public Doctor Doctor { set; get; }
-        public Prescription Prescription { set; get; }
+        public List<Prescription> Prescription { set; get; }
         public Diagnoses Diagnoses { get; set; }
     }
 }

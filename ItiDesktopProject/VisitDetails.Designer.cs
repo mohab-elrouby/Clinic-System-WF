@@ -30,24 +30,24 @@ namespace ItiDesktopProject
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VisitDetails));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.PatientName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DoctorCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClinicCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AppointmentCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PaymentStatusCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PaymentMethodCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AppointmentStatusCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.nameLable = new System.Windows.Forms.Label();
+            this.doctorLable = new System.Windows.Forms.Label();
+            this.clinicLable = new System.Windows.Forms.Label();
+            this.dateLable = new System.Windows.Forms.Label();
+            this.paymentStatusLable = new System.Windows.Forms.Label();
+            this.paymentMethodLable = new System.Windows.Forms.Label();
+            this.visitStatusLable = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -68,6 +68,7 @@ namespace ItiDesktopProject
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
@@ -83,6 +84,7 @@ namespace ItiDesktopProject
             // button4
             // 
             this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
@@ -98,6 +100,7 @@ namespace ItiDesktopProject
             // button5
             // 
             this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
@@ -124,95 +127,12 @@ namespace ItiDesktopProject
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.PatientName,
-            this.DoctorCol,
-            this.ClinicCol,
-            this.AppointmentCol,
-            this.PaymentStatusCol,
-            this.PaymentMethodCol,
-            this.AppointmentStatusCol});
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.dataGridView1.Location = new System.Drawing.Point(271, 254);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1365, 668);
-            this.dataGridView1.TabIndex = 12;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // PatientName
-            // 
-            this.PatientName.HeaderText = "Patient Name";
-            this.PatientName.MinimumWidth = 6;
-            this.PatientName.Name = "PatientName";
-            this.PatientName.ReadOnly = true;
-            // 
-            // DoctorCol
-            // 
-            this.DoctorCol.HeaderText = "Doctor";
-            this.DoctorCol.MinimumWidth = 6;
-            this.DoctorCol.Name = "DoctorCol";
-            this.DoctorCol.ReadOnly = true;
-            // 
-            // ClinicCol
-            // 
-            this.ClinicCol.HeaderText = "Clinic";
-            this.ClinicCol.MinimumWidth = 6;
-            this.ClinicCol.Name = "ClinicCol";
-            this.ClinicCol.ReadOnly = true;
-            // 
-            // AppointmentCol
-            // 
-            this.AppointmentCol.HeaderText = "Appointment";
-            this.AppointmentCol.MinimumWidth = 6;
-            this.AppointmentCol.Name = "AppointmentCol";
-            this.AppointmentCol.ReadOnly = true;
-            // 
-            // PaymentStatusCol
-            // 
-            this.PaymentStatusCol.HeaderText = "Payment status";
-            this.PaymentStatusCol.MinimumWidth = 6;
-            this.PaymentStatusCol.Name = "PaymentStatusCol";
-            this.PaymentStatusCol.ReadOnly = true;
-            // 
-            // PaymentMethodCol
-            // 
-            this.PaymentMethodCol.HeaderText = "Payment method";
-            this.PaymentMethodCol.MinimumWidth = 6;
-            this.PaymentMethodCol.Name = "PaymentMethodCol";
-            this.PaymentMethodCol.ReadOnly = true;
-            // 
-            // AppointmentStatusCol
-            // 
-            this.AppointmentStatusCol.HeaderText = "Appointment Status";
-            this.AppointmentStatusCol.MinimumWidth = 6;
-            this.AppointmentStatusCol.Name = "AppointmentStatusCol";
-            this.AppointmentStatusCol.ReadOnly = true;
-            // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(168)))), ((int)(((byte)(125)))));
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(271, 42);
+            this.textBox1.Location = new System.Drawing.Point(271, 46);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -221,16 +141,130 @@ namespace ItiDesktopProject
             this.textBox1.Text = "Receptionist :";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(849, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(209, 39);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Visit Details";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(168)))), ((int)(((byte)(125)))));
+            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.ForeColor = System.Drawing.Color.White;
+            this.textBox8.Location = new System.Drawing.Point(1220, 46);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
+            this.textBox8.Size = new System.Drawing.Size(416, 30);
+            this.textBox8.TabIndex = 16;
+            this.textBox8.TabStop = false;
+            this.textBox8.Text = "25/02/2022  12:00:00";
+            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // nameLable
+            // 
+            this.nameLable.AutoSize = true;
+            this.nameLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLable.Location = new System.Drawing.Point(382, 186);
+            this.nameLable.Name = "nameLable";
+            this.nameLable.Size = new System.Drawing.Size(184, 29);
+            this.nameLable.TabIndex = 17;
+            this.nameLable.Text = "Patient Name: ";
+            // 
+            // doctorLable
+            // 
+            this.doctorLable.AutoSize = true;
+            this.doctorLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.doctorLable.Location = new System.Drawing.Point(382, 386);
+            this.doctorLable.Name = "doctorLable";
+            this.doctorLable.Size = new System.Drawing.Size(104, 29);
+            this.doctorLable.TabIndex = 18;
+            this.doctorLable.Text = "Doctor: ";
+            // 
+            // clinicLable
+            // 
+            this.clinicLable.AutoSize = true;
+            this.clinicLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clinicLable.Location = new System.Drawing.Point(382, 326);
+            this.clinicLable.Name = "clinicLable";
+            this.clinicLable.Size = new System.Drawing.Size(93, 29);
+            this.clinicLable.TabIndex = 19;
+            this.clinicLable.Text = "Clinic: ";
+            // 
+            // dateLable
+            // 
+            this.dateLable.AutoSize = true;
+            this.dateLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLable.Location = new System.Drawing.Point(382, 256);
+            this.dateLable.Name = "dateLable";
+            this.dateLable.Size = new System.Drawing.Size(135, 29);
+            this.dateLable.TabIndex = 20;
+            this.dateLable.Text = "Visit date: ";
+            // 
+            // paymentStatusLable
+            // 
+            this.paymentStatusLable.AutoSize = true;
+            this.paymentStatusLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paymentStatusLable.Location = new System.Drawing.Point(1215, 186);
+            this.paymentStatusLable.Name = "paymentStatusLable";
+            this.paymentStatusLable.Size = new System.Drawing.Size(255, 29);
+            this.paymentStatusLable.TabIndex = 21;
+            this.paymentStatusLable.Text = "Payment status: Paid";
+            // 
+            // paymentMethodLable
+            // 
+            this.paymentMethodLable.AutoSize = true;
+            this.paymentMethodLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paymentMethodLable.Location = new System.Drawing.Point(1215, 256);
+            this.paymentMethodLable.Name = "paymentMethodLable";
+            this.paymentMethodLable.Size = new System.Drawing.Size(280, 29);
+            this.paymentMethodLable.TabIndex = 22;
+            this.paymentMethodLable.Text = "Payment method: Cash";
+            // 
+            // visitStatusLable
+            // 
+            this.visitStatusLable.AutoSize = true;
+            this.visitStatusLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visitStatusLable.Location = new System.Drawing.Point(1215, 326);
+            this.visitStatusLable.Name = "visitStatusLable";
+            this.visitStatusLable.Size = new System.Drawing.Size(152, 29);
+            this.visitStatusLable.TabIndex = 23;
+            this.visitStatusLable.Text = "Visit status: ";
+            // 
             // VisitDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1667, 922);
+            this.Controls.Add(this.visitStatusLable);
+            this.Controls.Add(this.paymentMethodLable);
+            this.Controls.Add(this.paymentStatusLable);
+            this.Controls.Add(this.dateLable);
+            this.Controls.Add(this.clinicLable);
+            this.Controls.Add(this.doctorLable);
+            this.Controls.Add(this.nameLable);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "VisitDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Visit Details";
@@ -238,7 +272,6 @@ namespace ItiDesktopProject
             this.Load += new System.EventHandler(this.VisitDetails_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,14 +284,16 @@ namespace ItiDesktopProject
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PatientName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DoctorCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ClinicCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AppointmentCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PaymentStatusCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PaymentMethodCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AppointmentStatusCol;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label nameLable;
+        private System.Windows.Forms.Label doctorLable;
+        private System.Windows.Forms.Label clinicLable;
+        private System.Windows.Forms.Label dateLable;
+        private System.Windows.Forms.Label paymentStatusLable;
+        private System.Windows.Forms.Label paymentMethodLable;
+        private System.Windows.Forms.Label visitStatusLable;
     }
 }

@@ -12,7 +12,7 @@ namespace clinckDB.databaseclincik
     {
 
         [Key]
-        [ForeignKey("Visit")]
+        //[ForeignKey("Visit")]
 
         public int ID { set; get; }
         public string medicen_name { set; get; }

@@ -64,7 +64,12 @@ namespace ItiDesktopProject
         private void VisitDetails_Load(object sender, EventArgs e)
         {
             visit = model1.Visites.Include("Clinc").Include("Patient").Include("Doctor").Include("Bills").Include("Prescription").Include("Diagnoses").Where(v=>v.VisitID == VisitId).FirstOrDefault();
-            dataGridView1.Rows.Add(visit.Patient.name, visit.Doctor.name, visit.Clinc.clinic_name, visit.visit_time, "", "", visit.Visit_Status);
+            nameLable.Text += visit.Patient.name;
+            doctorLable.Text += visit.Doctor.name;
+            dateLable.Text += visit.visit_date;
+            clinicLable.Text += visit.Clinc.clinic_name;
+            visitStatusLable.Text += visit.Visit_Status;
+            //dataGridView1.Rows.Add(visit.Patient.name, visit.Doctor.name, visit.Clinc.clinic_name, visit.visit_time, "", "", visit.Visit_Status);
         }
     }
 }
