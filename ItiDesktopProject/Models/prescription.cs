@@ -13,14 +13,12 @@ namespace clinckDB.databaseclincik
 
         [Key]
         //[ForeignKey("Visit")]
-
         public int ID { set; get; }
         public string medicen_name { set; get; }
         public int? Dose { set; get; }
         public string Duration { set; get; }
-
+        public string Instruction { set; get; }
         public Visit Visit { set; get; }
-
 
     }
 

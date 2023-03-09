@@ -15,6 +15,7 @@ namespace ItiDesktopProject
     public partial class ReceptionistAppointmentsForm : Form
     {
         Model1 model1 = new Model1();
+        public Reseptionest LoggedUser { get; set; }
         IList<Visit> visits;
         IList<Visit> allVisits;
         IList<string> payment = new List<string>() { "Paid", "Unpaid"};

@@ -106,3 +106,4 @@ C:\Users\mohab\Downloads\ItiDesktopProject\ItiDesktopProject\obj\Debug\ItiDeskto
 C:\Users\mohab\Downloads\ItiDesktopProject\ItiDesktopProject\obj\Debug\ItiDesktopProject.Migrations.addWorkingHoursToDoctor.resources
 C:\Users\mohab\Downloads\ItiDesktopProject\ItiDesktopProject\obj\Debug\ItiDesktopProject.Migrations.removeRelationBetweenPrescriptionAndVisit.resources
 C:\Users\mohab\Downloads\ItiDesktopProject\ItiDesktopProject\obj\Debug\ItiDesktopProject.Migrations.addListOfPrescreptionsToVisit.resources
+C:\Users\mohab\Downloads\ItiDesktopProject\ItiDesktopProject\obj\Debug\ItiDesktopProject.Migrations.addInstructionToPrescription.resources

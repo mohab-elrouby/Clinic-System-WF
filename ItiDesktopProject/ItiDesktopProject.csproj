@@ -57,6 +57,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddOrRemoveDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOrRemoveDoctor.Designer.cs">
+      <DependentUpon>AddOrRemoveDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddOrRemoveReceptionist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOrRemoveReceptionist.Designer.cs">
+      <DependentUpon>AddOrRemoveReceptionist.cs</DependentUpon>
+    </Compile>
     <Compile Include="Adminstrator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +124,10 @@
     <Compile Include="Migrations\202303082220474_addListOfPrescreptionsToVisit.cs" />
     <Compile Include="Migrations\202303082220474_addListOfPrescreptionsToVisit.designer.cs">
       <DependentUpon>202303082220474_addListOfPrescreptionsToVisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303090707343_addInstructionToPrescription.cs" />
+    <Compile Include="Migrations\202303090707343_addInstructionToPrescription.designer.cs">
+      <DependentUpon>202303090707343_addInstructionToPrescription.cs</DependentUpon>
     </Compile>
     <Compile Include="PatientInfo.cs">
       <SubType>Form</SubType>
@@ -232,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303082220474_addListOfPrescreptionsToVisit.resx">
       <DependentUpon>202303082220474_addListOfPrescreptionsToVisit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303090707343_addInstructionToPrescription.resx">
+      <DependentUpon>202303090707343_addInstructionToPrescription.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prescription.resx">
       <DependentUpon>Prescription.cs</DependentUpon>
